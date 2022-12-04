@@ -15,7 +15,6 @@
         <module>spring-boot-admin-simple</module>
         <module>spring-boot-banner</module>
         <module>spring-boot-commandLineRunner</module>
-        <module>spring-boot-docker</module>
         <module>spring-boot-elasticsearch</module>
         <module>spring-boot-file-upload</module>
         <module>spring-boot-hello</module>
@@ -31,7 +30,6 @@
         <module>spring-boot-mybatis/spring-boot-mybatis-annotation-mulidatasource</module>
         <module>spring-boot-mybatis/spring-boot-mybatis-xml</module>
         <module>spring-boot-mybatis/spring-boot-mybatis-xml-mulidatasource</module>
-        <module>spring-boot-mybatis-plus</module>
         <module>spring-boot-package</module>
         <module>spring-boot-package-war</module>
         <module>spring-boot-rabbitmq</module>
@@ -42,9 +40,27 @@
         <module>spring-boot-thymeleaf/spring-boot-thymeleaf</module>
         <module>spring-boot-thymeleaf/spring-boot-thymeleaf-layout</module>
         <module>spring-boot-web</module>
-        <module>spring-boot-web-thymeleaf</module>
         <module>spring-boot-webflux</module>
     </modules>
+
+    <dependencies>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>31.1-jre</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
